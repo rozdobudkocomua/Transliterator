@@ -10,7 +10,7 @@ import ua.com.rozdobudko.Objects.Word;
 /**
  * @author Oleksii Rozdobudko rozdobudko.com.ua
  * @version 1.1.1
- * @since 2017-08-26
+ * @since 2017-12-20
  */
 public class EditController {
 

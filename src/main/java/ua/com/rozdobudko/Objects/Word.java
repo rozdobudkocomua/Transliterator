@@ -4,8 +4,8 @@ import javafx.beans.property.SimpleStringProperty;
 
 /**
  * @author Oleksii Rozdobudko rozdobudko.com.ua
- * @version 1.1.1
- * @since 2017-08-26
+ * @version 1.1.2
+ * @since 2017-12-20
  */
 public class Word {
     private SimpleStringProperty cyr = new SimpleStringProperty("");
@@ -47,111 +47,111 @@ public class Word {
     private String cyr2lat(char ch) {
         switch (ch) {
             case 'А':
-                return "A";
+                return "a";
             case 'а':
                 return "a";
             case 'Б':
-                return "B";
+                return "b";
             case 'б':
                 return "b";
             case 'В':
-                return "V";
+                return "v";
             case 'в':
                 return "v";
             case 'Г':
-                return "G";
+                return "g";
             case 'г':
                 return "g";
             case 'Д':
-                return "D";
+                return "d";
             case 'д':
                 return "d";
             case 'Е':
-                return "E";
+                return "e";
             case 'е':
                 return "e";
             case 'Ё':
-                return "Yo";
+                return "yo";
             case 'ё':
                 return "yo";
             case 'Ж':
-                return "Zh";
+                return "zh";
             case 'ж':
                 return "zh";
             case 'З':
-                return "Z";
+                return "z";
             case 'з':
                 return "z";
             case 'И':
-                return "I";
+                return "i";
             case 'и':
                 return "i";
             case 'Й':
-                return "J";
+                return "j";
             case 'й':
                 return "j";
             case 'К':
-                return "K";
+                return "k";
             case 'к':
                 return "k";
             case 'Л':
-                return "L";
+                return "l";
             case 'л':
                 return "l";
             case 'М':
-                return "M";
+                return "m";
             case 'м':
                 return "m";
             case 'Н':
-                return "N";
+                return "n";
             case 'н':
                 return "n";
             case 'О':
-                return "O";
+                return "o";
             case 'о':
                 return "o";
             case 'П':
-                return "P";
+                return "p";
             case 'п':
                 return "p";
             case 'Р':
-                return "R";
+                return "r";
             case 'р':
                 return "r";
             case 'С':
-                return "S";
+                return "s";
             case 'с':
                 return "s";
             case 'Т':
-                return "T";
+                return "t";
             case 'т':
                 return "t";
             case 'У':
-                return "U";
+                return "u";
             case 'у':
                 return "u";
             case 'Ф':
-                return "F";
+                return "f";
             case 'ф':
                 return "f";
             case 'Х':
-                return "Kh";
+                return "kh";
             case 'х':
                 return "kh";
             case 'Ц':
-                return "Ts";
+                return "ts";
             case 'ц':
                 return "ts";
             case 'Ч':
-                return "Ch";
+                return "ch";
             case 'ч':
                 return "ch";
             case 'Ш':
-                return "Sh";
+                return "sh";
             case 'ш':
                 return "sh";
             case 'Щ':
-                return "Shh";
+                return "shh";
             case 'щ':
                 return "shh";
             case 'Ъ':
@@ -159,7 +159,7 @@ public class Word {
             case 'ъ':
                 return "";
             case 'Ы':
-                return "Y";
+                return "y";
             case 'ы':
                 return "y";
             case 'Ь':
@@ -167,63 +167,63 @@ public class Word {
             case 'ь':
                 return "";
             case 'Э':
-                return "E";
+                return "e";
             case 'э':
                 return "e";
             case 'Ю':
-                return "Yu";
+                return "yu";
             case 'ю':
                 return "yu";
             case 'Я':
-                return "Ya";
+                return "ya";
             case 'я':
                 return "ya";
             case 'Ї':
-                return "Yi";
+                return "yi";
             case 'ї':
                 return "yi";
             case 'І':
-                return "I";
+                return "i";
             case 'і':
                 return "i";
             case 'Є':
-                return "E";
+                return "e";
             case 'є':
                 return "e";
             case '~':
-                return "";
+                return "-";
             case '#':
-                return "";
+                return "-";
             case '%':
-                return "";
+                return "-";
             case '&':
-                return "";
+                return "-";
             case '*':
-                return "";
+                return "-";
             case '{':
-                return "";
+                return "-";
             case '}':
-                return "";
+                return "-";
             case '\\':
-                return "";
+                return "-";
             case '|':
-                return "";
+                return "-";
             case '/':
-                return "";
+                return "-";
             case ':':
-                return "";
+                return "-";
             case '<':
-                return "";
+                return "-";
             case '>':
-                return "";
+                return "-";
             case '?':
-                return "";
+                return "-";
             case '+':
-                return "";
+                return "-";
             case '"':
-                return "";
+                return "-";
             case ' ':
-                return "_";
+                return "-";
             default:
                 return String.valueOf(ch);
         }
@@ -234,7 +234,7 @@ public class Word {
         for (char ch : s.toCharArray()) {
             sb.append(cyr2lat(ch));
         }
-        return sb.toString();
+        return sb.toString().toLowerCase();
     }
 
     @Override

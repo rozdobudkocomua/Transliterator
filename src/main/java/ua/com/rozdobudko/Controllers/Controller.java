@@ -26,8 +26,8 @@ import java.io.IOException;
 
 /**
  * @author Oleksii Rozdobudko rozdobudko.com.ua
- * @version 1.1.1
- * @since 2017-08-26
+ * @version 1.1.2
+ * @since 2017-12-20
  */
 public class Controller {
     // коллекция слов
